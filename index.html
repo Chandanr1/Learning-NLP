@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Wellness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="dw-nav">
+      <div class="container nav-inner">
+        <div class="brand">Digital Wellness</div>
+        <nav>
+          <a class="nav-link active" href="/index.html">Home</a>
+          <a class="nav-link" href="/chatbot.html">Chatbot</a>
+          <a class="nav-link" href="/games.html">Games</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container home-grid">
+      <section class="hero card">
+        <div class="sprout" aria-hidden="true">🌱</div>
+        <h1>Welcome to <span>Digital Wellness</span></h1>
+        <p>A safe space for students to seek mental health support, play relaxing games, and connect without stigma.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="/chatbot.html">Go to Chatbot</a>
+          <a class="btn success" href="/games.html">Explore Games</a>
+        </div>
+      </section>
+
+      <section class="chat-preview card">
+        <h2>AI Mental Health Chatbot</h2>
+        <div class="preview-window">
+          <div class="msg bot">Hello 👋 I’m here to listen. How are you feeling today?</div>
+          <div class="msg you">I understand, Can you tell me more?</div>
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Type your message..." disabled>
+          <button class="btn" disabled>Send</button>
+        </div>
+      </section>
+
+      <section class="games card full">
+        <h2>🎮 Fun Games for Stress Relief</h2>
+        <div class="games-row">
+          <div class="game-card">
+            <h3>Rock Paper Scissors</h3>
+            <p>Best of three</p>
+            <a class="btn" href="/games.html#rps">Play Now</a>
+          </div>
+          <div class="game-card">
+            <h3>Memory Flip</h3>
+            <p>Guess the pairs</p>
+            <a class="btn" href="/games.html#memory">Play Now</a>
+          </div>
+          <div class="game-card">
+            <h3>Tic Tac Toe</h3>
+            <p>Beat your opponent</p>
+            <a class="btn" href="/games.html#ttt">Play Now</a>
+          </div>
+          <div class="game-card">
+            <h3>Number Guess</h3>
+            <p>Check your luck</p>
+            <a class="btn" href="/games.html#number">Play Now</a>
+          </div>
+          <div class="game-card">
+            <h3>Typing Speed</h3>
+            <p>Calm your mind</p>
+            <a class="btn" href="/games.html#typing">Play Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <span>© <span id="year"></span> Digital Wellness</span>
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
+  </html>
+
