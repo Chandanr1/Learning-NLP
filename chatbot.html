@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Wellness - Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="dw-nav">
+      <div class="container nav-inner">
+        <div class="brand">Digital Wellness</div>
+        <nav>
+          <a class="nav-link" href="/index.html">Home</a>
+          <a class="nav-link active" href="/chatbot.html">Chatbot</a>
+          <a class="nav-link" href="/games.html">Games</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="chat-layout">
+        <aside class="chat-sidebar card">
+          <div class="sidebar-header">
+            <button id="new-chat" class="btn small full">+ New chat</button>
+          </div>
+          <ul id="convo-list" class="convo-list"></ul>
+        </aside>
+        <section class="chat-main card">
+          <div id="chat-window" class="chat-window"></div>
+          <form id="chat-form" class="chat-input">
+            <textarea id="chat-text" rows="2" placeholder="Send a message" required></textarea>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <span>© <span id="year"></span> Digital Wellness</span>
+    </footer>
+
+    <script src="/main.js"></script>
+    <script src="/chatbot.js"></script>
+  </body>
+  </html>
+

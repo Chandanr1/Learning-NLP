@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Wellness - Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="dw-nav">
+      <div class="container nav-inner">
+        <div class="brand">Digital Wellness</div>
+        <nav>
+          <a class="nav-link" href="/index.html">Home</a>
+          <a class="nav-link" href="/chatbot.html">Chatbot</a>
+          <a class="nav-link active" href="/games.html">Games</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">🎮 Fun Games for Stress Relief</h1>
+
+      <div class="games-grid">
+        <section id="rps" class="game-section card">
+          <h2>Rock Paper Scissors</h2>
+          <div class="rps">
+            <div class="score">You <span id="rps-you">0</span> - <span id="rps-bot">0</span> Bot</div>
+            <div class="choices">
+              <button class="btn" data-choice="rock">🪨 Rock</button>
+              <button class="btn" data-choice="paper">📄 Paper</button>
+              <button class="btn" data-choice="scissors">✂️ Scissors</button>
+            </div>
+            <div class="result" id="rps-result">Make your move!</div>
+            <button class="link-btn" id="rps-reset">Reset</button>
+          </div>
+        </section>
+
+        <section id="memory" class="game-section card">
+          <h2>Memory Flip</h2>
+          <div class="memory">
+            <div class="memory-grid" id="memory-grid"></div>
+            <div class="result" id="memory-status">Find all the pairs</div>
+            <button class="btn" id="memory-reset">Restart</button>
+          </div>
+        </section>
+
+        <section id="ttt" class="game-section card">
+          <h2>Tic Tac Toe</h2>
+          <div class="ttt">
+            <div class="ttt-grid" id="ttt-grid"></div>
+            <div class="result" id="ttt-status">Your turn (X)</div>
+            <button class="btn" id="ttt-reset">Restart</button>
+          </div>
+        </section>
+
+        <section id="number" class="game-section card">
+          <h2>Number Guess</h2>
+          <div class="number">
+            <p>Guess a number between 1 and 100</p>
+            <input id="num-input" type="number" min="1" max="100" placeholder="Enter guess" />
+            <button class="btn" id="num-submit">Guess</button>
+            <button class="link-btn" id="num-new">New Number</button>
+            <div class="result" id="num-status">Good luck!</div>
+          </div>
+        </section>
+
+        <section id="typing" class="game-section card">
+          <h2>Typing Speed</h2>
+          <div class="typing">
+            <p id="typing-text"></p>
+            <textarea id="typing-input" rows="4" placeholder="Start typing here..."></textarea>
+            <div class="result" id="typing-status">Press any key to start</div>
+            <div class="row">
+              <button class="btn" id="typing-restart">Restart</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <span>© <span id="year"></span> Digital Wellness</span>
+    </footer>
+
+    <script src="/main.js"></script>
+    <script src="/games.js"></script>
+  </body>
+  </html>
+
